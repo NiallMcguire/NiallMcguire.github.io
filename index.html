@@ -8,8 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: dark">
+<body>
 
 <div style="margin-bottom:0; padding: 3vh; align-content: center;" class="jumbotron jumbotron-fluid bg-white " >
     <div class="container bg-white ">
@@ -38,17 +40,17 @@
 </nav>
 
 
-<div class="container">
-    <div class="row">
-        <div class="col">
+<div class="container" style="padding-top: 1vh; font-family: 'Lato', sans-serif;">
+        <div class="col shadow p-3 mb-5 bg-white rounded border">
             <h1 style="font-size: 2em"><u>About</u></h1>
-            <p style="font-size: 0.8rem">My name is Niall McGuire, I am Scottish student currently studying for a Meng degree in computer science at the university of strathclyde in Glasgow/Scotland. At the time of writing I am entering my fourth year of study out of the five in total.</p>
-
-            <p style="font-size: 0.8rem">On this site you will find a varity of information such as my contact details,CV and information about projects I have previously completed or I am currently working on.</p>
+            <p style="font-size: 0.9em">My name is Niall McGuire, I am Scottish student currently studying for a Meng degree in computer science at the University of Strathclyde in Glasgow/Scotland. At the time of writing I am entering my fourth year of study out of the five in total.</p>
+            <p style="font-size: 0.9em">On this site you will find a variety of information such as my contact details, CV and information about projects I have previously completed or I am currently working on.</p>
         </div>
-        <div class="col">
+
+
+        <div class="col justify-content-center" style="text-align: center; padding-bottom: 4vh">
             <h1 style="font-size: 2em"><u>Links</u></h1>
-            <p>
+
                 <a href="https://github.com/NiallMcguire">
                     <svg width="2em" height="2em" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                         <g>
@@ -56,9 +58,8 @@
                         </g>
                     </svg>
                 </a>
-            </p>
-            <p>
-                <a href="mailto: niallm95@googlemail.com">
+
+                <a href="mailto: niallm95@googlemail.com" style="padding: 2vw">
                     <svg width="2em" height="2em" viewBox="0 0 256 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                         <defs>
                             <linearGradient x1="0.00388991071%" y1="49.997619%" x2="100.032232%" y2="49.997619%" id="linearGradient-1">
@@ -79,9 +80,9 @@
                         </g>
                     </svg>
                 </a>
-            </p>
 
-            <p>
+
+
                 <a href="https://www.instagram.com/niall_mcguire/">
                     <svg width="2em" height="2em" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                         <g>
@@ -89,11 +90,97 @@
                         </g>
                     </svg>
                 </a>
-            </p>
+
 
         </div>
+
+
+
+    <div class="container-fluid">
+
+            <div class="col">
+                <div style="text-align: center">
+                    <h1 style="font-size: 2em"><u>Projects</u></h1>
+                </div>
+
+                <div class="accordion" id="accordionExample" style="padding-bottom: 2vh">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Project #1 NLP-Song-generator
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                This project was a small test to try and play around with the technology behind natural language processing using the tensor flow library to drive it. The project's main function is to take in sample text data e.g. song lyrics, and then do its best to try and come up with more lyrics that fit the style of the artist. All of the source code can be found on my GitHub held within a .py file and a .txt file that contains some sample text.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Project #2 Glasgow Covid HeatMap
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                This project was a section I created for a Covid Support mobile web app. Its purpose was to display to the user a “Heat map” of Glasgow’s neighborhoods, were based on how many cases of covid there were recorded in that area the colour of the neighbourhood would change. Unfortunately there were no open source statistics directly related to the number of covid cases found in a neighbourhood so ALL data presented in the app is random. The app also allows the user to sort based on population and vaccinations. All files again can be found on my github.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
     </div>
 
+    <div class="container-fluid">
+            <div class="col">
+                <div style="text-align: center">
+                    <h1 style="font-size: 2em"><u>Planned Projects</u></h1>
+                </div>
+
+                <div class="accordion" id="accordion2" style="padding-bottom: 2vh">
+                    <div class="card">
+                        <div class="card-header" id="headingOne-1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne-1" aria-expanded="true" aria-controls="collapseOne-1">
+                                    Planned Project #1 Game AI for 4-in-a row
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne-1" class="collapse show" aria-labelledby="headingOne-1" data-parent="#accordion2">
+                            <div class="card-body">
+                                This project will try and create a simulated game of 4-in-a row where the user will play against an AI opponent that will use the minimax algorithm to look ahead and play as optimally as it can.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo-2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo-2" aria-expanded="false" aria-controls="collapseTwo-2">
+                                    Planned Project #2 Sudoku solver using Computer vision and CSP
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+                            <div class="card-body">
+                                This project aims to create a fully functional sudoku solver using a combination of computer vision and constraint satisfaction problems.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+    </div>
 
 </body>
 </html>
